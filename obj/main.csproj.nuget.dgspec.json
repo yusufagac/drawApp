@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/runner/BrokenInternationalWaterfall/main.csproj": {}
+    "/home/runner/drawApp/main.csproj": {}
   },
   "projects": {
-    "/home/runner/BrokenInternationalWaterfall/main.csproj": {
+    "/home/runner/drawApp/main.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/runner/BrokenInternationalWaterfall/main.csproj",
+        "projectUniqueName": "/home/runner/drawApp/main.csproj",
         "projectName": "main",
-        "projectPath": "/home/runner/BrokenInternationalWaterfall/main.csproj",
+        "projectPath": "/home/runner/drawApp/main.csproj",
         "packagesPath": "/home/runner/.nuget/packages/",
-        "outputPath": "/home/runner/BrokenInternationalWaterfall/obj/",
+        "outputPath": "/home/runner/drawApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/runner/.nuget/NuGet/NuGet.Config"
