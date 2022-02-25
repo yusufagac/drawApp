@@ -43,3 +43,5 @@
 /home/runner/drawApp/bin/Debug/netcoreapp6.0/ref/main.dll
 /home/runner/drawApp/bin/Debug/netcoreapp6.0/main.pdb
 /home/runner/drawApp/obj/Debug/netcoreapp6.0/main.genruntimeconfig.cache
+/home/runner/drawApp/bin/Debug/netcoreapp6.0/LumenWorks.Framework.IO.dll
+/home/runner/drawApp/obj/Debug/netcoreapp6.0/main.csproj.CopyComplete

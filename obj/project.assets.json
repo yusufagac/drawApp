@@ -1,11 +1,38 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "LumenWorks.Framework.IO/3.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/net20/LumenWorks.Framework.IO.dll": {}
+        },
+        "runtime": {
+          "lib/net20/LumenWorks.Framework.IO.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "LumenWorks.Framework.IO/3.8.0": {
+      "sha512": "Br2Q9j/tf2uF3Ci4CajidD18tui9DOg2iIzH5Xjro35ra6r8HGMD12B+ZlJ8v9AN3YXl7iPu5YDGbBlXVcZpHw==",
+      "type": "package",
+      "path": "lumenworks.framework.io/3.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "COPYING.txt",
+        "lib/net20/LumenWorks.Framework.IO.dll",
+        "lib/net20/LumenWorks.Framework.IO.xml",
+        "lumenworks.framework.io.3.8.0.nupkg.sha512",
+        "lumenworks.framework.io.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "LumenWorks.Framework.IO >= 3.8.0"
+    ]
   },
   "packageFolders": {
     "/home/runner/.nuget/packages/": {}
@@ -43,6 +70,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "netcoreapp6.0",
+        "dependencies": {
+          "LumenWorks.Framework.IO": {
+            "target": "Package",
+            "version": "[3.8.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -61,5 +94,17 @@
         "runtimeIdentifierGraphPath": "/nix/store/knphr82kmbrymkmwv8dl86i37xbvg67z-dotnet-sdk-6.0.100/sdk/6.0.100/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'LumenWorks.Framework.IO 3.8.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "LumenWorks.Framework.IO",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

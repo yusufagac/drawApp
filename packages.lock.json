@@ -1,6 +1,13 @@
 {
   "version": 1,
   "dependencies": {
-    "net6.0": {}
+    "net6.0": {
+      "LumenWorks.Framework.IO": {
+        "type": "Direct",
+        "requested": "[3.8.0, )",
+        "resolved": "3.8.0",
+        "contentHash": "Br2Q9j/tf2uF3Ci4CajidD18tui9DOg2iIzH5Xjro35ra6r8HGMD12B+ZlJ8v9AN3YXl7iPu5YDGbBlXVcZpHw=="
+      }
+    }
   }
 }
