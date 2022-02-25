@@ -3,26 +3,19 @@ using System.Collections.Generic;
 using System.IO;
 
 class Program {
-    static void Main(string[] args) {
-        using(var reader = new List<string>{"one","two","three","four"}; {
-            List<string> listA = new List<string>();
-            List<string> listB = new List<string>();
-            while (!reader.EndOfStream)
-            {
-                var line = reader.ReadLine();
-                var values = line.Split(';');
+    static void Main(string[] args) {   
+          string text;   
+          var fileStream = new FileStream(@"c:\oku.txt", FileMode.Open, FileAccess.Read);
+          using (var streamReader = new StreamReader(fileStream))
+          {
+              text = streamReader.ReadToEnd();
+          }
     
-                listA.Add(values[0]);
-                listB.Add(values[1]);
-            }
-         }
-        var random = new Random();
-        int index = random.Next(listA.Count);
-        Console.WriteLine(listA[index]);
+            string[] split = text.Split(',');
+      
+                Random rnd = new Random();
+                int index = rnd.Next(split.Length);
+                Console.WriteLine($"Name: {split[index]}");                    
     }
 }
-  
-  
-  
-        // var list = new List<string>{"one","two","three","four"};
-        // using(var reader = new StreamReader(@"C:\test.csv"))
+
