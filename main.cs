@@ -3,8 +3,15 @@ using System.Collections.Generic;
 using System.IO;
 
 class Program {
-    static void Main(string[] args) {   
-      
+    static void Main(string[] args) { 
+      //Baska bir sistemde tekrar dene...
+      /*string text;   
+          var fileStream = new FileStream(@"c:\oku.txt", FileMode.Open, FileAccess.Read);
+          using (var streamReader = new StreamReader(fileStream))
+          {
+              text = streamReader.ReadToEnd();
+          }*/
+    
       while(true){
             Console.WriteLine("Aralarina virgul koyarak isimleri yazin.");
             Console.Write("Giris: ");
@@ -33,11 +40,3 @@ class Program {
             Console.WriteLine("Yine bekleriz...");
     }
 }
-
-/*string text;   
-          var fileStream = new FileStream(@"c:\oku.txt", FileMode.Open, FileAccess.Read);
-          using (var streamReader = new StreamReader(fileStream))
-          {
-              text = streamReader.ReadToEnd();
-          }*/
-
