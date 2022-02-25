@@ -32,9 +32,11 @@ class Program {
                                       break;
                                 }
                                 else {
+                                    
                                      continue; 
                                 }
                       }
+                break;
                             
         }
             Console.WriteLine("Yine bekleriz...");
