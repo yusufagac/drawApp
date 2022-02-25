@@ -4,7 +4,7 @@ using System.IO;
 
 class Program {
     static void Main(string[] args) {
-        using(var reader = new StreamReader(@"C:\test.csv")) {
+        using(var reader = new List<string>{"one","two","three","four"}; {
             List<string> listA = new List<string>();
             List<string> listB = new List<string>();
             while (!reader.EndOfStream)
@@ -16,11 +16,13 @@ class Program {
                 listB.Add(values[1]);
             }
          }
+        var random = new Random();
+        int index = random.Next(listA.Count);
+        Console.WriteLine(listA[index]);
     }
 }
   
   
-  var random = new Random();
-         var list = new List<string>{"one","two","three","four"};
-         int index = random.Next(list.Count);
-         Console.WriteLine(list[index]);
+  
+        // var list = new List<string>{"one","two","three","four"};
+        // using(var reader = new StreamReader(@"C:\test.csv"))
