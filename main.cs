@@ -12,7 +12,7 @@ class Program {
               text = streamReader.ReadToEnd();
           }*/
     
-      while(true){
+       while(true){
             Console.WriteLine("Aralarina virgul koyarak isimleri yazin.");
             Console.Write("Giris: ");
             string text = Console.ReadLine();
@@ -21,23 +21,16 @@ class Program {
                 Random rnd = new Random();
                 int index = rnd.Next(split.Length);
                 Console.WriteLine($"Name: {split[index]}");                      
-                    while(true){
                         Console.WriteLine("Devam edilsin mi? Y/N");
-                         string bitir = Console.ReadLine();
-                            if(bitir=="Y"){
-                                     break;                     
+                         string devam = Console.ReadLine();
+                            if(devam=="Y"){
+                                     continue;                     
                                 }
-                                else if(bitir=="N"){
+                                else {
                                       Console.WriteLine("Program sonlandiriliyor...");
                                       break;
                                 }
-                                else {
-                                    
-                                     continue; 
-                                }
-                      }
-                break;
-                            
+                           
         }
             Console.WriteLine("Yine bekleriz...");
     }
